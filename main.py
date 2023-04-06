@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.cm as cm
 import random
 from sklearn.metrics import silhouette_score
-OMP_NUM_THREADS=4
+#OMP_NUM_THREADS=4
 
 random.seed(1234)
 
