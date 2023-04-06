@@ -13,7 +13,8 @@ from sklearn.metrics import silhouette_score
 OMP_NUM_THREADS=4
 
 random.seed(1234)
-main_path = r"C:\\Users\\Alan Castaneda\\Desktop\\ArchivosServicio\\Microplasticos\\trabajo\\"
+
+main_path = r"C:\Users\Alan Castaneda\Documents\GitHub\Microplasticos-FTIR-ML\\"
 
 # IMPORTACION DE LOS DATOS
 path_ = os.path.join(main_path, "muestras\\")
@@ -350,7 +351,7 @@ plt.show()
 dataset.T.to_csv('Clasificaciones.csv', encoding='utf-8', index=True)
 
 # Ruta en donde se guardaran las muestras clasificadas
-output_dir = os.path.join(main_path, "MuestrasClasificadas\\")
+output_dir = os.path.join(main_path, "SamplesPredictions\\")
 
 # Iteracion sobre cada muestra en "dataset"
 for i, row in dataset.iterrows():
