@@ -155,7 +155,7 @@ blanco = pd.read_csv(os.path.join(val_path, lista_blancos[0]), sep = "\t", heade
 numero_onda = blanco.iloc[:, 0].tolist()
 data_blancos = pd.DataFrame(data={"Numero de onda": numero_onda})
 
-# Se importan los 12 tipos de plasticos
+# Se importan los tipos de plasticos conocidos
 for i in range(0, len(lista_blancos)):
     muestra = pd.read_csv(os.path.join(val_path, "{}".format(lista_blancos[i])), 
                           sep = "\t", header = None)
@@ -244,6 +244,10 @@ dataset_predicciones['Spectral Clustering'] = labels_spectral
 dataset_predicciones['Agglomerative Clustering'] = labels_agglo
 
 #-----------------------------------------------------------------------------
+# PENDIENTE PENDIENTE PENDIENTE!!!
+# COSAS ADEMAS A HACER!!!
+# 12 GRAFICAS DE DISTRIBUCION DE CADA CLUSTER
+# DIAGRAMA DE FLUJO DE TODOS LOS  SVG
 DF = dataset_predicciones.T
 
 PREDS = DF.iloc[-3:, :].values
@@ -335,13 +339,6 @@ ax3.set_title('Agglomerative Clustering')
 
 fig.savefig("Clustering Results", dpi=500)
 plt.show()
-
-# A HACER!!!
-# 12 GRAFICAS DE DISTRIBUCION DE CADA CLUSTER
-# DIAGRAMA DE FLUJO DE TODOS LOS  SVG
-# CHECAR EL DPI DE LAS GRAFICAS
-# IXCHEL VA A PASAR MAS MUESTRAS
-# BUSCAR BBDD DE PLASTICOS CLASIFICADOS EN INTERNET
 
 #-----------------------------------------------------------------------------
 
