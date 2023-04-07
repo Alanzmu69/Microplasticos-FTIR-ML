@@ -1752,6 +1752,6 @@ Numero de onda	poliettilrn_succinato.dpt
 402.54524	0.83607
 400.49143	0.81954
 398.43763	0.81463
-KMeans Clustering	10.0
-Spectral Clustering	3.0
-Agglomerative Clustering	1.0
+KMeans Clustering	9.0
+Spectral Clustering	6.0
+Agglomerative Clustering	0.0

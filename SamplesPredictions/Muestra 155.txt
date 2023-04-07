@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 155
 402.54524	0.842
 400.49143	0.84976
 398.43763	0.85513
-KMeans Clustering	6.0
-Spectral Clustering	9.0
-Agglomerative Clustering	3.0
+KMeans Clustering	0.0
+Spectral Clustering	3.0
+Agglomerative Clustering	0.0

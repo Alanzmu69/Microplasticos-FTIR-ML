@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 61
 402.54524	0.86002
 400.49143	0.85657
 398.43763	0.85335
-KMeans Clustering	6.0
-Spectral Clustering	9.0
-Agglomerative Clustering	3.0
+KMeans Clustering	10.0
+Spectral Clustering	3.0
+Agglomerative Clustering	8.0

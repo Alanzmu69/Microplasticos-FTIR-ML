@@ -205,10 +205,10 @@ plt.show()
 # Determinar el numero de componentes (en este caso el mejor numero 3)
 # examinando la grafica y detectandolos en el codo de la funcion
 pca = PCA(n_components = 3)
-pca.fit(dataset)
+pca.fit(dataset_escalado)
 
 # Aplicamos la transformacion de los datos
-df = pca.fit_transform(dataset)
+df = pca.fit_transform(dataset_escalado)
 
 #-----------------------------------------------------------------------------
 
@@ -247,34 +247,8 @@ dataset_predicciones['Agglomerative Clustering'] = labels_agglo
 # PENDIENTE PENDIENTE PENDIENTE!!!
 # COSAS ADEMAS A HACER!!!
 # 12 GRAFICAS DE DISTRIBUCION DE CADA CLUSTER
-# DIAGRAMA DE FLUJO DE TODOS LOS  SVG
-DF = dataset_predicciones.T
+# DIAGRAMA DE FLUJO DE TODOS LOS SVG
 
-PREDS = DF.iloc[-3:, :].values
-
-def PlotClasses(df, predictions):
-    unique_predictions = np.unique(predictions)
-    n_groups = len(unique_predictions)
-    colors = cm.rainbow(np.linspace(0, 1, n_groups))
-    
-    plt.xlim(4000, 390)
-    plt.ylim(0, 1.2)
-    plt.title("Distribution")
-    plt.xlabel("Wavelength")
-    plt.ylabel("Transmitance %")
-    
-    for i, pred in enumerate(unique_predictions):
-        group_indices = np.where(predictions == pred)[1]
-        group_data = df.iloc[:, group_indices]
-        color = colors[i]
-        label = "Prediction {}".format(int(pred))
-        plt.plot(group_data, linewidth = 0.5, color=color, label=label)
-    
-    plt.legend()
-    plt.show()
-
-PlotClasses(DF.iloc[:-3, :], PREDS)
-        
 #-----------------------------------------------------------------------------
 
 # VISUALIZACION
@@ -339,6 +313,13 @@ ax3.set_title('Agglomerative Clustering')
 
 fig.savefig("Clustering Results", dpi=500)
 plt.show()
+
+#-----------------------------------------------------------------------------
+
+# PENDIENTE PENDIENTE PENDIENTE!!!
+# COSAS ADEMAS A HACER!!!
+# 12 GRAFICAS DE DISTRIBUCION DE CADA CLUSTER
+# DIAGRAMA DE FLUJO DE TODOS LOS SVG
 
 #-----------------------------------------------------------------------------
 

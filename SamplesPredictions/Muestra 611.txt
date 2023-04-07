@@ -1753,5 +1753,5 @@ Numero de onda	Muestra 611
 400.49143	0.74305
 398.43763	0.74651
 KMeans Clustering	11.0
-Spectral Clustering	3.0
-Agglomerative Clustering	1.0
+Spectral Clustering	4.0
+Agglomerative Clustering	7.0

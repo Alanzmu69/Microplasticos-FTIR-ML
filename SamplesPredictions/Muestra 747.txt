@@ -1753,5 +1753,5 @@ Numero de onda	Muestra 747
 400.49143	0.7091
 398.43763	0.70665
 KMeans Clustering	1.0
-Spectral Clustering	7.0
-Agglomerative Clustering	1.0
+Spectral Clustering	5.0
+Agglomerative Clustering	11.0

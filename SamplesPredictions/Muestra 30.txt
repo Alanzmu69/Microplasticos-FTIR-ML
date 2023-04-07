@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 30
 402.54524	0.90278
 400.49143	0.90345
 398.43763	0.90115
-KMeans Clustering	3.0
-Spectral Clustering	8.0
-Agglomerative Clustering	0.0
+KMeans Clustering	10.0
+Spectral Clustering	9.0
+Agglomerative Clustering	8.0

@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 492
 402.54524	0.94332
 400.49143	0.9455
 398.43763	0.94676
-KMeans Clustering	3.0
-Spectral Clustering	2.0
-Agglomerative Clustering	0.0
+KMeans Clustering	10.0
+Spectral Clustering	3.0
+Agglomerative Clustering	8.0

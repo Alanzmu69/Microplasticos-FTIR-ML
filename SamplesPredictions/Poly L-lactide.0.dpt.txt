@@ -1752,6 +1752,6 @@ Numero de onda	Poly L-lactide.0.dpt
 402.54524	0.9598
 400.49143	0.96053
 398.43763	0.96075
-KMeans Clustering	3.0
+KMeans Clustering	8.0
 Spectral Clustering	11.0
-Agglomerative Clustering	0.0
+Agglomerative Clustering	10.0

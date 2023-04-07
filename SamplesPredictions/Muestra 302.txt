@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 302
 402.54524	0.63485
 400.49143	0.63635
 398.43763	0.64125
-KMeans Clustering	4.0
-Spectral Clustering	5.0
-Agglomerative Clustering	2.0
+KMeans Clustering	7.0
+Spectral Clustering	2.0
+Agglomerative Clustering	3.0

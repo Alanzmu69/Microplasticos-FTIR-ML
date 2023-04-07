@@ -1753,5 +1753,5 @@ Numero de onda	Muestra 434
 400.49143	0.93613
 398.43763	0.93844
 KMeans Clustering	0.0
-Spectral Clustering	2.0
-Agglomerative Clustering	3.0
+Spectral Clustering	10.0
+Agglomerative Clustering	0.0
