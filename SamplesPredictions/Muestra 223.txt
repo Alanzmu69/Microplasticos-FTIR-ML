@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 223
 402.54524	0.50182
 400.49143	0.50273
 398.43763	0.50005
-KMeans Clustering	11.0
-Spectral Clustering	8.0
-Agglomerative Clustering	6.0
+KMeans Clustering	6.0
+Spectral Clustering	10.0
+Agglomerative Clustering	5.0

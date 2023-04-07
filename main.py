@@ -85,6 +85,22 @@ def PlotAll(df):
     plt.plot(df, linewidth = 0.5)
     plt.show()
     
+# Funcion para visualizar n cantidad de muestras en un plano
+def PlotSamples(data, samples, clusteringName, numClase):
+    plt.xlim(4000, 390)
+    plt.ylim(0, 1.2)
+
+    plt.title("Class {} of {} Samples".format(numClase, clusteringName))
+    plt.xlabel("Wavelength")
+    plt.ylabel("Transmitance %")
+
+    for n in samples:
+        A = data.iloc[:, n]
+        plt.plot(A, linewidth = 0.5)
+    
+    plt.show()
+
+    
 #-----------------------------------------------------------------------------
 
 # ELIMINACION DE RUIDO
@@ -204,7 +220,7 @@ plt.show()
 
 # Determinar el numero de componentes (en este caso el mejor numero 3)
 # examinando la grafica y detectandolos en el codo de la funcion
-pca = PCA(n_components = 2)
+pca = PCA(n_components = 3)
 pca.fit(dataset_escalado)
 
 # Aplicamos la transformacion de los datos
@@ -238,15 +254,57 @@ lista_algo = [labels_kmeans, labels_spectral, labels_agglo]
 
 # Añadir los resultados del cluster al dataset
 dataset_predicciones = dataset
+dataset_predicciones_kmeans = dataset_predicciones
+dataset_predicciones_spectral = dataset_predicciones
+dataset_predicciones_agglo = dataset_predicciones
 
-dataset_predicciones['KMeans Clustering'] = labels_kmeans
-dataset_predicciones['Spectral Clustering'] = labels_spectral
-dataset_predicciones['Agglomerative Clustering'] = labels_agglo
 
+# Añadimos las predicciones a 3 nuevos dataframes, que despues recorreremos con un
+# ciclo "for", para detectar las predicciones y hacer los plots de distribución de cada
+# predicción en función de la muestra que es
+
+# Para K-Means
+dataset_predicciones_kmeans = dataset_predicciones_kmeans
+dataset_predicciones_kmeans['KMeans Clustering'] = labels_kmeans
+dataset_predicciones_kmeans = dataset_predicciones_kmeans.T
+listaTemp = []
+for j in range(0, numeroClusters):
+    for i in range(0, dataset_predicciones_kmeans.shape[1]):
+        if (dataset_predicciones_kmeans.iloc[-1, i] == j):
+            listaTemp.append(i)
+    fig = plt.figure(dpi = 500)
+    PlotSamples(data, listaTemp, "KMeans Clustering", j)
+    listaTemp.clear()   
+
+# Para Spectral Clustering
+dataset_predicciones_spectral = dataset_predicciones_spectral
+dataset_predicciones_spectral['Spectral Clustering'] = labels_spectral
+dataset_predicciones_spectral = dataset_predicciones_spectral.T
+listaTemp = []
+for j in range(0, numeroClusters):
+    for i in range(0, dataset_predicciones_spectral.shape[1]):
+        if (dataset_predicciones_spectral.iloc[-1, i] == j):
+            listaTemp.append(i)
+    fig = plt.figure(dpi = 500)
+    PlotSamples(data, listaTemp, 'Spectral Clustering', j)
+    listaTemp.clear()  
+
+# Para Agglomerative Clustering
+dataset_predicciones_agglo = dataset_predicciones_agglo
+dataset_predicciones_agglo['Agglomerative Clustering'] = labels_agglo
+dataset_predicciones_agglo = dataset_predicciones_agglo.T
+listaTemp = []
+for j in range(0, numeroClusters):
+    for i in range(0, dataset_predicciones_agglo.shape[1]):
+        if (dataset_predicciones_agglo.iloc[-1, i] == j):
+            listaTemp.append(i)    
+    fig = plt.figure(dpi = 500)
+    PlotSamples(data, listaTemp, 'Agglomerative Clustering', j)
+    listaTemp.clear()  
+    
+        
 #-----------------------------------------------------------------------------
 # PENDIENTE PENDIENTE PENDIENTE!!!
-# COSAS ADEMAS A HACER!!!
-# 12 GRAFICAS DE DISTRIBUCION DE CADA CLUSTER
 # DIAGRAMA DE FLUJO DE TODOS LOS SVG
 
 #-----------------------------------------------------------------------------
@@ -314,12 +372,6 @@ ax3.set_title('Agglomerative Clustering')
 fig.savefig("Clustering Results", dpi=500)
 plt.show()
 
-#-----------------------------------------------------------------------------
-
-# PENDIENTE PENDIENTE PENDIENTE!!!
-# COSAS ADEMAS A HACER!!!
-# 12 GRAFICAS DE DISTRIBUCION DE CADA CLUSTER
-# DIAGRAMA DE FLUJO DE TODOS LOS SVG
 
 #-----------------------------------------------------------------------------
 

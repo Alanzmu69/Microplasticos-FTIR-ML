@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 211
 402.54524	0.80296
 400.49143	0.79988
 398.43763	0.80113
-KMeans Clustering	9.0
+KMeans Clustering	4.0
 Spectral Clustering	4.0
-Agglomerative Clustering	8.0
+Agglomerative Clustering	0.0

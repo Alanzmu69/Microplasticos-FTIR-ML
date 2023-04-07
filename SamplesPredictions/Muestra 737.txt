@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 737
 402.54524	0.83788
 400.49143	0.84171
 398.43763	0.84002
-KMeans Clustering	9.0
+KMeans Clustering	4.0
 Spectral Clustering	4.0
-Agglomerative Clustering	8.0
+Agglomerative Clustering	0.0

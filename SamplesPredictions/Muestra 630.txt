@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 630
 402.54524	0.62983
 400.49143	0.6355
 398.43763	0.6387
-KMeans Clustering	3.0
+KMeans Clustering	11.0
 Spectral Clustering	2.0
 Agglomerative Clustering	3.0

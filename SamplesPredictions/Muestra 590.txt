@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 590
 402.54524	0.90637
 400.49143	0.90668
 398.43763	0.90899
-KMeans Clustering	6.0
-Spectral Clustering	9.0
-Agglomerative Clustering	7.0
+KMeans Clustering	9.0
+Spectral Clustering	0.0
+Agglomerative Clustering	4.0

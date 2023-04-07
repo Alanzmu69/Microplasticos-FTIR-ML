@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 911
 402.54524	0.93697
 400.49143	0.933
 398.43763	0.92972
-KMeans Clustering	5.0
+KMeans Clustering	10.0
 Spectral Clustering	6.0
-Agglomerative Clustering	9.0
+Agglomerative Clustering	1.0

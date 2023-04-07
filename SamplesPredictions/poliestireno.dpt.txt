@@ -1752,6 +1752,6 @@ Numero de onda	poliestireno.dpt
 402.54524	0.99343
 400.49143	0.99436
 398.43763	0.9925
-KMeans Clustering	6.0
-Spectral Clustering	5.0
-Agglomerative Clustering	7.0
+KMeans Clustering	9.0
+Spectral Clustering	7.0
+Agglomerative Clustering	4.0

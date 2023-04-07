@@ -1753,5 +1753,5 @@ Numero de onda	Muestra 159
 400.49143	0.93053
 398.43763	0.92553
 KMeans Clustering	1.0
-Spectral Clustering	3.0
-Agglomerative Clustering	5.0
+Spectral Clustering	5.0
+Agglomerative Clustering	9.0

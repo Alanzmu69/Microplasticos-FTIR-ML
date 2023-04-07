@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 800
 402.54524	0.80919
 400.49143	0.81306
 398.43763	0.8093
-KMeans Clustering	0.0
+KMeans Clustering	4.0
 Spectral Clustering	4.0
-Agglomerative Clustering	8.0
+Agglomerative Clustering	11.0
