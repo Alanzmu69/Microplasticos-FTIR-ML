@@ -1752,6 +1752,6 @@ Numero de onda	Acido Tereftalico.0.dpt
 402.54524	0.98491
 400.49143	0.99158
 398.43763	1.0
-KMeans Clustering	5.0
-Spectral Clustering	8.0
+KMeans Clustering	0.0
+Spectral Clustering	11.0
 Agglomerative Clustering	2.0

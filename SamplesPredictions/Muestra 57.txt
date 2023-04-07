@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 57
 402.54524	0.9063
 400.49143	0.90284
 398.43763	0.8982
-KMeans Clustering	10.0
-Spectral Clustering	6.0
+KMeans Clustering	8.0
+Spectral Clustering	5.0
 Agglomerative Clustering	1.0

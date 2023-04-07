@@ -90,7 +90,7 @@ def PlotSamples(data, samples, clusteringName, numClase):
     plt.xlim(4000, 390)
     plt.ylim(0, 1.2)
 
-    plt.title("Class {} of {} Samples".format(numClase, clusteringName))
+    plt.title("Microplastic type {} of {} samples".format(numClase, clusteringName))
     plt.xlabel("Wavelength")
     plt.ylabel("Transmitance %")
 
@@ -268,12 +268,14 @@ dataset_predicciones_kmeans = dataset_predicciones_kmeans
 dataset_predicciones_kmeans['KMeans Clustering'] = labels_kmeans
 dataset_predicciones_kmeans = dataset_predicciones_kmeans.T
 listaTemp = []
+titulo = 'KMeans Clustering'
 for j in range(0, numeroClusters):
     for i in range(0, dataset_predicciones_kmeans.shape[1]):
         if (dataset_predicciones_kmeans.iloc[-1, i] == j):
             listaTemp.append(i)
     fig = plt.figure(dpi = 500)
-    PlotSamples(data, listaTemp, "KMeans Clustering", j)
+    PlotSamples(data, listaTemp, titulo, j)
+    fig.savefig("{} clase {}".format(titulo, j))
     listaTemp.clear()   
 
 # Para Spectral Clustering
@@ -281,12 +283,14 @@ dataset_predicciones_spectral = dataset_predicciones_spectral
 dataset_predicciones_spectral['Spectral Clustering'] = labels_spectral
 dataset_predicciones_spectral = dataset_predicciones_spectral.T
 listaTemp = []
+titulo = 'Spectral Clustering'
 for j in range(0, numeroClusters):
     for i in range(0, dataset_predicciones_spectral.shape[1]):
         if (dataset_predicciones_spectral.iloc[-1, i] == j):
             listaTemp.append(i)
     fig = plt.figure(dpi = 500)
-    PlotSamples(data, listaTemp, 'Spectral Clustering', j)
+    PlotSamples(data, listaTemp, titulo, j)
+    fig.savefig("{} clase {}".format(titulo, j))
     listaTemp.clear()  
 
 # Para Agglomerative Clustering
@@ -294,12 +298,14 @@ dataset_predicciones_agglo = dataset_predicciones_agglo
 dataset_predicciones_agglo['Agglomerative Clustering'] = labels_agglo
 dataset_predicciones_agglo = dataset_predicciones_agglo.T
 listaTemp = []
+titulo = 'Agglomerative Clustering'
 for j in range(0, numeroClusters):
     for i in range(0, dataset_predicciones_agglo.shape[1]):
         if (dataset_predicciones_agglo.iloc[-1, i] == j):
             listaTemp.append(i)    
     fig = plt.figure(dpi = 500)
-    PlotSamples(data, listaTemp, 'Agglomerative Clustering', j)
+    PlotSamples(data, listaTemp, titulo, j)
+    fig.savefig("{} clase {}".format(titulo, j))
     listaTemp.clear()  
     
         

@@ -1753,5 +1753,5 @@ Numero de onda	Muestra 188
 400.49143	0.83521
 398.43763	0.83392
 KMeans Clustering	8.0
-Spectral Clustering	5.0
+Spectral Clustering	10.0
 Agglomerative Clustering	1.0

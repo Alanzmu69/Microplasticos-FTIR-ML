@@ -1752,6 +1752,6 @@ Numero de onda	PLA.1.dpt
 402.54524	0.89366
 400.49143	0.89026
 398.43763	0.8855
-KMeans Clustering	9.0
-Spectral Clustering	1.0
+KMeans Clustering	1.0
+Spectral Clustering	6.0
 Agglomerative Clustering	4.0
