@@ -1752,6 +1752,6 @@ Numero de onda	Policaprolactona2.dpt
 402.54524	0.9541
 400.49143	0.95363
 398.43763	0.95516
-KMeans Clustering	8.0
-Spectral Clustering	11.0
-Agglomerative Clustering	10.0
+KMeans Clustering	6.0
+Spectral Clustering	5.0
+Agglomerative Clustering	7.0

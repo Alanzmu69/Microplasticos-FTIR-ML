@@ -1753,5 +1753,5 @@ Numero de onda	Muestra 16
 400.49143	0.92907
 398.43763	0.93006
 KMeans Clustering	8.0
-Spectral Clustering	9.0
-Agglomerative Clustering	8.0
+Spectral Clustering	7.0
+Agglomerative Clustering	4.0

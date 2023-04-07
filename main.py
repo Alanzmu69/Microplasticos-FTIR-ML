@@ -102,10 +102,10 @@ for n in range(0, data.shape[1]):
     if (data.iloc[0, n] < 0.8):
         outliers_list.append(n)
         
-for i in range(0, data.shape[1]):
-    for j in range(1, data.shape[0]-1):
-        if (data.iloc[j, i] > 1):
-            outliers_list.append(i)
+# for i in range(0, data.shape[1]):
+#     for j in range(0, data.shape[0]):
+#         if (data.iloc[j, i] > 1.1):
+#             outliers_list.append(i)
 
 set_outliers = set(outliers_list)
 outliers_list = (list(set_outliers))
@@ -130,7 +130,7 @@ data.columns.values
 
 # Eliminamos todas las variables temporales creadas para liberar memoria
 del data1, df, i, muestra, n, name, numero_onda, outliers_list, path_,\
-tamano_df, tempList, x, j, set_outliers
+tamano_df, tempList, x, set_outliers
 
 # Hacemos plot de todas las muestras para visualizarlas en un solo plot y corro-
 # borar que se tenga una distribucion mas uniforme
@@ -204,7 +204,7 @@ plt.show()
 
 # Determinar el numero de componentes (en este caso el mejor numero 3)
 # examinando la grafica y detectandolos en el codo de la funcion
-pca = PCA(n_components = 3)
+pca = PCA(n_components = 2)
 pca.fit(dataset_escalado)
 
 # Aplicamos la transformacion de los datos

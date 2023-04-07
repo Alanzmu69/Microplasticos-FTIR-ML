@@ -1752,6 +1752,6 @@ Numero de onda	Polipropileno.1.dpt
 402.54524	0.99897
 400.49143	1.00017
 398.43763	1.00376
-KMeans Clustering	8.0
-Spectral Clustering	11.0
-Agglomerative Clustering	10.0
+KMeans Clustering	6.0
+Spectral Clustering	5.0
+Agglomerative Clustering	7.0

@@ -1752,6 +1752,6 @@ Numero de onda	PET_SIAMA.0.dpt
 402.54524	0.64488
 400.49143	0.64468
 398.43763	0.64535
-KMeans Clustering	11.0
+KMeans Clustering	9.0
 Spectral Clustering	4.0
-Agglomerative Clustering	7.0
+Agglomerative Clustering	0.0
