@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 501
 402.54524	0.76056
 400.49143	0.76051
 398.43763	0.76738
-KMeans Clustering	2.0
-Spectral Clustering	1.0
+KMeans Clustering	4.0
+Spectral Clustering	10.0
 Agglomerative Clustering	8.0

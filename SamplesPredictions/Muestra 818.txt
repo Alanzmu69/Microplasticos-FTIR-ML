@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 818
 402.54524	0.77703
 400.49143	0.76951
 398.43763	0.75441
-KMeans Clustering	9.0
-Spectral Clustering	4.0
+KMeans Clustering	1.0
+Spectral Clustering	9.0
 Agglomerative Clustering	8.0

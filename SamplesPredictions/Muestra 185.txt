@@ -1752,6 +1752,6 @@ Numero de onda	Muestra 185
 402.54524	0.97834
 400.49143	0.97721
 398.43763	0.97961
-KMeans Clustering	1.0
-Spectral Clustering	6.0
+KMeans Clustering	6.0
+Spectral Clustering	4.0
 Agglomerative Clustering	4.0

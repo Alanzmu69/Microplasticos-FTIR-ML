@@ -308,10 +308,6 @@ for j in range(0, numeroClusters):
     fig.savefig("{} clase {}".format(titulo, j))
     listaTemp.clear()  
     
-        
-#-----------------------------------------------------------------------------
-# PENDIENTE PENDIENTE PENDIENTE!!!
-# DIAGRAMA DE FLUJO DE TODOS LOS SVG
 
 #-----------------------------------------------------------------------------
 

@@ -1752,6 +1752,6 @@ Numero de onda	hidroxietil-teraftalato.dpt
 402.54524	0.65049
 400.49143	0.65742
 398.43763	0.67129
-KMeans Clustering	11.0
-Spectral Clustering	0.0
+KMeans Clustering	8.0
+Spectral Clustering	6.0
 Agglomerative Clustering	5.0
